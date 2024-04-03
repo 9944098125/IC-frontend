@@ -1,0 +1,66 @@
+- Entity => [
+      1. this form takes the address of a Node/Place and then after submitting the form send request to super admin.
+      2. Then according to the super admin approval or rejection the status is shown until then it is shown as pending. 
+]
+
+- Asset types => [
+       1. this form takes the details of the asset types and then submit
+       2. after submitting the form request will be sent to super admin about adding the asset type.
+       3. Then if super admin approves that request then that particular asset type is added in the records as approved or else rejected.
+       4. And again admin will have an option to view the sub assets records related to that asset type and another option to delete the record.
+    ]
+- Assets => this form creates an asset with unique name containing the info we gave while creating that asset.
+- Projects =>  [
+        1. this form takes the details of the project.
+        2. And send request to the super admin.
+        3. according to that approved or rejected it is shown in the table.
+     ]
+- Project node => [
+        1. this form takes the existing project and node values.
+        2. accoriding to that node will be assigned for the project.
+- Users - [
+        1. this form takes the details for creating a user,
+        2. It takes user's role, name, phone number, and other important information.
+        3. while submitting the details in the last step error will come details not taken.
+        4. Then that request goes to super admin and if he approves that then it will be stored as approved.
+        5. And we'll have an option to deactivate and activate a user and it happens right away.
+      ]
+- Project asset types => [
+        1. this form is taking the info about the asset types in a node
+        2. And then after submitting all the details it is assigning them to project asset types.(doubt)
+       ]
+- project routes => [
+        1. in this form we need to select from which node we are sending the goods.
+        2. then we'll select where the goods are dispatching to the customer or to other node
+        3. like that from node to end customer we need to create a cycle of transits.
+        4. then the record will be saved in the table.
+       ]
+          
+- Transit times => [
+        1. this form takes the transit details like who sent to whom and from which place and when to when.
+        2. After submiting the details it is added to the records below.
+   ]
+- dispatch => [
+        1. this form takes the dispatch details like from node, to node, company name, driver phone number, lorry number, dispatch dates and asset. and that document is sent to the recepient and they verify these details and assets.
+        2. After submitting the form a receipt is shown with the details of dispatch, vehicle number/ driver number and all.    ]
+- Recieve - [
+        1. this form is to receive goods with qr or dc number and there should be a dispatch with today's date of delivery.
+        2. if we select any one it navigates to the form with from and to nodes and project name to start verifying goods and if no receipt is there for this day an error message will come.
+
+    ]
+- Hold list => [
+        1. it shows the paused list of dispatches and receipts.
+        2. we can resume the dispatches and receipts by clicking the according buttons and then they are navigated to the respecitve route and all the details are alredy prefilled,
+        3. we just need to fill projectg name and node and driver number then those dispatches/receipts are resumed.
+     ]
+- Recent Transactions => [
+        1.  this form takes the company name, and other details about the transit and searches for that particular transaction.
+]
+- Damaged assets => [
+        1. this form takes the damaged asset images name and all the details when it is dispatch, to where, quantity, to which type of repair center it is sent, lorry number it is travelled in, asset number and such information.
+        2. after submitting the details those damaged goods are added to the table below.
+     ]
+- Repaired assets => [
+        1. this form takes the details of an asset which is repaired and sent back to nodes, it takes the details like when did it come to repair center when it is repaired, from node, to node, company name and such details. 
+        2. if we have all those info given correct then it shows the asset number properly and if we submit that the goods are repaired and sent for dispatch again
+      ]

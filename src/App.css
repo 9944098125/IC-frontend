@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+
+body,
+* {
+	font-family: "Reggae One", system-ui;
+	font-weight: 700;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+:root {
+	--primary-light-color: #8f13fb;
+	--primary-dark-color: #3c0071;
+	--secondary-light-color: #fe5699;
+	--secondary-dark-color: #ff0080;
+	--font-size-lg: 32px;
+	--font-size-xl: 46px;
+	--font-size-md: 25px;
+	--font-size-sm: 21px;
+	--font-size-xs: 16px;
+	--font-weight-extrabold: 800;
+	--font-weight-bold: 600;
+	--font-weight-light: 400;
+}
+.react-tel-input .form-control {
+	width: 100% !important;
+	height: 45px !important;
+	border: none !important;
+	border-radius: 6px !important;
+}
+.react-tel-input .form-control:active,
+.react-tel-input .form-control:focus {
+	height: 55px !important;
+	border: 2px solid var(--primary-dark-color);
+}
+.country-selector {
+	height: 45px;
+	width: 100%;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	border-radius: 4px;
+}
+.country-selector:active,
+.country-selector:focus {
+	height: 55px;
+	border: 2px solid var(--primary-dark-color);
+	border-radius: 6px;
+}
+.slideLeft {
+	animation: backwards 1s moveLeft;
+}
+.slideRight {
+	animation: backwards 1s moveRight;
+}
+@keyframes moveLeft {
+	from {
+		transform: translateX(0px);
+	}
+	to {
+		transform: translateX(-150%);
+	}
+}
+
+@keyframes moveRight {
+	from {
+		transform: translateX(0px);
+	}
+	to {
+		transform: translateX(150%);
+	}
+}
